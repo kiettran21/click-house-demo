@@ -1,1 +1,14 @@
 Hello
+https://www.youtube.com/watch?v=fegIWh1II2M
+https://dev.to/titronium/clickhouse-server-in-1-minute-with-docker-4gf2
+
+-- True - ok connect
+docker-compose exec ch_server clickhouse-client
+
+https://clickhouse.com/docs/en/engines/database-engines/mysql
+CREATE DATABASE mysql_db ENGINE = MySQL('mysql:3306', 'ProductDB', 'root', 'example')
+                 SETTINGS read_write_timeout=10000, connect_timeout=100;
+
+https://clickhouse.com/docs/en/engines/database-engines/postgresql
+CREATE DATABASE test_database
+ENGINE = PostgreSQL('postgres:5432', 'postgres_db', 'postgres', 'example', 'public', 1);
